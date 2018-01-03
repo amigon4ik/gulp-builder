@@ -1,8 +1,7 @@
 var gulp    = require('gulp'),
     config  = require('./gulp/config.js'),
     helpers = require('./gulp/helpers.js'),
-    compile = require('./gulp/compile.js'),
-    path    = require('path');
+    compile = require('./gulp/compile.js');
 
 function clean() {
     helpers.cleanDir(config.output.dist);
