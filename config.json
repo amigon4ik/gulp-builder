@@ -1,0 +1,35 @@
+{
+  "output": {
+    "dist": "./dist",
+    "styles": {
+      "outputStyle": "compressed",
+      "browsers": [
+        "Chrome >= 45",
+        "Firefox ESR",
+        "Edge >= 12",
+        "Explorer >= 10",
+        "iOS >= 9",
+        "Safari >= 9",
+        "Android >= 4.4",
+        "Opera >= 30"
+      ],
+      "app": "app.bundle.css",
+      "vendors": "vendors.bundle.css"
+    },
+    "scripts": {
+      "app": "app.bundle.js",
+      "vendors": "vendors.bundle.js"
+    }
+  },
+  "build": {
+    "vendors": {},
+    "app": {
+      "sass": [
+        "./sass/app.scss"
+      ],
+      "scripts": [
+        "./js/main.js"
+      ]
+    }
+  }
+}
